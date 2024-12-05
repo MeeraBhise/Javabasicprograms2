@@ -44,7 +44,7 @@ public class Printthenameofalldepartments {
     }
     @Override
     public String toString() {
-        return "Employee{" +
+        return "practiseprograms.Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +

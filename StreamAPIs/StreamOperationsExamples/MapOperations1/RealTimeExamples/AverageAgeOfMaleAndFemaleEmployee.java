@@ -52,7 +52,7 @@ public class AverageAgeOfMaleAndFemaleEmployee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "practiseprograms.Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
@@ -79,3 +79,20 @@ public class AverageAgeOfMaleAndFemaleEmployee {
 
     }
 }
+// Count the number of employees in each department?
+/*
+Map<String, Long> employeeCountByDepartment=
+        employeeList.stream().collect(Collectors.groupingBy(practiseprograms.Employee::getDepartment, Collectors.counting()));
+
+Set<Entry<String, Long>> entrySet = employeeCountByDepartment.entrySet();
+
+for (Entry<String, Long> entry : entrySet)
+        {
+        System.out.println(entry.getKey()+" : "+entry.getValue());
+        }
+*/
+//: Get the names of all employees who have joined after 2015?
+     /*   employeeList.stream()
+            .filter(e -> e.getYearOfJoining() > 2015)
+        .map(practiseprograms.Employee::getName)
+            .forEach(System.out::println);*/

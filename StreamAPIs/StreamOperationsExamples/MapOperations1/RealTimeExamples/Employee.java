@@ -54,7 +54,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "practiseprograms.Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
@@ -64,7 +64,6 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
-
     public static void main(String[] args) {
         List<Employee> emplist = new ArrayList<Employee>();
         emplist.add((new Employee(1,"mehar",07,"female","computer",2002,20000)));
